@@ -26,6 +26,12 @@ When you activate Gorilla Systems, you get access to a team of digital experts:
 - 🏁 **@quality_supervisor**: Ensures code sanity and prevents hallucinations.
 - 📂 **@custodian_archivist**: Maintains a persistent record of the entire process.
 
+## 📂 Included Project Assets
+This repository also includes baseline templates and scripts used by the Gorilla collective:
+- 📑 **[AGENTS.md](./AGENTS.md)**: Defines the operational protocols for each specialized sub-agent.
+- 📜 **[Scripts/](./Scripts/)**: Contains automation scripts like `mozilla_bootstrap.py` and `apply_branding.sh`.
+- ⚙️ **[Configs/](./Configs/)**: Includes the `.mozconfig` templates for cross-compilation.
+
 ---
 
 ## 🚀 One-Click Installation

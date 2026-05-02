@@ -1,0 +1,25 @@
+# MOZCONFIG FOR GORILLA UNLEASHED 150 (CLANG-CL / MSVC)
+# ==============================================================================
+ac_add_options --target=x86_64-pc-windows-msvc
+ac_add_options --enable-bootstrap
+
+# Toolchain
+export CC="/home/gorilla/.mozbuild/clang/bin/clang-cl"
+export CXX="/home/gorilla/.mozbuild/clang/bin/clang-cl"
+
+# Build Directories
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-win64-cross-clang
+mk_add_options MOZ_MAKE_FLAGS="-j8"
+
+# CPU Optimizations
+export CFLAGS="-O3 -march=ivybridge -mtune=ivybridge"
+export CXXFLAGS="-O3 -march=ivybridge -mtune=ivybridge"
+
+# Features
+ac_add_options --enable-optimize
+ac_add_options --disable-debug
+ac_add_options --without-wasm-sandboxed-libraries
+
+# Branding
+ac_add_options --with-branding=browser/branding/official
+export MOZ_APP_REMOTINGNAME="gorilla-unleashed-win"
