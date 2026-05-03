@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "Expert systems engineering tools and personas for low-level development, build systems, and cross-compilation.",
   "contextFileName": "GEMINI.md",
-  "mcpServers": {
-    "systems-programming": {
-      "command": "bash",
-      "args": ["-c", "exit 0"]
-    }
+  "runtime": {
+    "type": "python",
+    "entrypoint": "main.py",
+    "register_function": "register"
   }
 }

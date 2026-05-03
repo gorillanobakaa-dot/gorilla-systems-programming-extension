@@ -1,0 +1,28 @@
+# Manual Git Push Instructions for Gorilla Systems Programming Extension v2.0
+
+## 1. Navigate to the repository directory:
+cd /home/gorilla/gorilla-systems-extension-repo/
+
+## 2. Stage all the new and modified files:
+git add .
+
+## 3. Commit the changes with a detailed message:
+git commit -m "feat: Implement Gen 2 Executable Orchestration Agent
+
+Authored-by: The Magic ArrowOS Gorilla
+
+This major upgrade transforms the Systems Programming Extension from a conceptual blueprint into a fully functional, executable orchestration agent.
+
+The first-generation extension was a persona that guided the LLM's reasoning. This second-generation version, architected by 'The Magic ArrowOS Gorilla,' injects a powerful Python backend (`main.py`) that provides the agent with a real set of tools to perform its duties.
+
+Key Changes:
+
+- **Added `main.py`**: Implements the `GorillaSystemsProgrammingExtension` class, which registers a new `gorilla_master` agent profile with a full suite of executable tools.
+- **Updated `gemini-extension.json`**: The manifest is now configured to use the Python runtime, pointing to the `register` function in `main.py`.
+- **Dynamic System Prompt**: The agent's persona is now loaded dynamically from `GEMINI.md`, separating configuration from the core logic.
+- **New `README.md` and `MANUAL.md`**: Comprehensive documentation has been added to explain the new executable workflow, the role of the master agent, and the purpose of its tools.
+
+This new version enables a robust, multi-agent workflow where the `gorilla_master` can delegate tasks, supervise code quality, and maintain a persistent knowledge base, representing a significant leap in capability."
+
+## 4. Push the commit to your GitHub repository:
+git push origin main
